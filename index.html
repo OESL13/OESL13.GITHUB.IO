@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tienda Sara | Inicio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/estilos.css" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark navbar-sara">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">✦ Tienda Sara</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
+        <li class="nav-item"><a class="nav-link" href="carrito.html">Carrito <span class="badge rounded-pill text-bg-light" id="cart-count">0</span></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<header class="hero">
+  <div class="container py-5">
+    <div class="row align-items-center g-4">
+      <div class="col-lg-7">
+        <span class="eyebrow">TECNOLOGÍA · ESTILO · HOGAR</span>
+        <h1 class="display-4 fw-bold mt-3">Todo lo que buscas,<br><span class="text-accent">en un solo lugar.</span></h1>
+        <p class="lead mt-3">Descubre productos para tu día a día con una experiencia de compra sencilla, rápida y agradable.</p>
+        <a class="btn btn-accent btn-lg mt-2" href="productos.html">Explorar productos</a>
+      </div>
+      <div class="col-lg-5">
+        <div class="hero-art" aria-label="Ilustración decorativa de compras" role="img">
+          <div class="orb orb-one"></div><div class="orb orb-two"></div>
+          <div class="shopping-bag">🛍️</div><div class="floating f1">🎧</div><div class="floating f2">👟</div><div class="floating f3">💻</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<main>
+  <section class="container py-5">
+    <div class="section-heading">
+      <div><span class="eyebrow">COMPRA POR CATEGORÍA</span><h2 class="fw-bold mt-2">Encuentra lo que necesitas</h2></div>
+      <a href="productos.html" class="text-decoration-none fw-semibold">Ver catálogo →</a>
+    </div>
+    <div class="row g-3 mt-2">
+      <div class="col-6 col-lg"><a class="category-card" href="productos.html?categoria=Electronica"><span>📺</span><strong>Electrónica</strong></a></div>
+      <div class="col-6 col-lg"><a class="category-card" href="productos.html?categoria=Computo"><span>💻</span><strong>Cómputo</strong></a></div>
+      <div class="col-6 col-lg"><a class="category-card" href="productos.html?categoria=Ropa"><span>👕</span><strong>Ropa</strong></a></div>
+      <div class="col-6 col-lg"><a class="category-card" href="productos.html?categoria=Accesorios"><span>🎒</span><strong>Accesorios</strong></a></div>
+      <div class="col-6 col-lg"><a class="category-card" href="productos.html?categoria=Hogar"><span>🏠</span><strong>Hogar</strong></a></div>
+    </div>
+  </section>
+  <section class="soft-section py-5">
+    <div class="container">
+      <div class="section-heading"><div><span class="eyebrow">SELECCIÓN ESPECIAL</span><h2 class="fw-bold mt-2">Productos destacados</h2></div><a href="productos.html" class="text-decoration-none fw-semibold">Ver todos →</a></div>
+      <div class="row g-4 mt-2" id="featured-products"></div>
+    </div>
+  </section>
+  <section class="container py-5">
+    <div class="row g-4">
+      <div class="col-md-4"><div class="benefit"><span>🚚</span><h5>Compra fácil</h5><p>Explora el catálogo y agrega tus artículos al carrito.</p></div></div>
+      <div class="col-md-4"><div class="benefit"><span>🔎</span><h5>Encuentra rápido</h5><p>Usa el buscador y los filtros para localizar productos.</p></div></div>
+      <div class="col-md-4"><div class="benefit"><span>💬</span><h5>Atención cercana</h5><p>Una experiencia clara, sencilla y pensada para el usuario.</p></div></div>
+    </div>
+  </section>
+</main>
+<footer class="footer-sara"><div class="container d-flex flex-column flex-md-row justify-content-between gap-2"><span>© 2026 Tienda Sara · Proyecto académico</span><span>Inicio · Productos · Carrito</span></div></footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/tienda.js"></script>
+<script>renderFeatured(); updateCartCount();</script>
+</body></html>
